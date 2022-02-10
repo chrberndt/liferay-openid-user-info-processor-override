@@ -1,30 +1,16 @@
 # Same as com.liferay.portal.security.sso.openid.connect.impl
 Bundle-Name: Open Liferay Portal Security SSO OpenID Connect Implementation
-Bundle-SymbolicName: com.liferay.portal.security.sso.openid.connect.impl
+Bundle-SymbolicName: com.liferay.portal.security.sso.openid.connect.impl.fragment
 # 5.0.93: Host bundle version of 7.3.10 sp3
 Bundle-Version: 5.0.93
 Fragment-Host: com.liferay.portal.security.sso.openid.connect.impl
-# Export internal and included classes so we can use them in our customization
-# Exported-package by default appends the Bundle-Version of the 
-# fragment bundle - because of this, we have to declare
-# the nimbusds version explicitly (8.4.3 for 
+
+# Export internal and included classes so that we can use them in our customization
+# Exported-package by default appends the Bundle-Version of the ragment bundle 
+# - because of this, we have to declare the nimbusds version explicitly (8.4.3 for 
 # com.liferay.portal.security.sso.openid.connect.impl 5.0.93 (7.3.10 sp3)
 
 Export-Package: \
 	com.liferay.portal.security.sso.openid.connect.internal,\
 	\
 	com.nimbusds.openid.connect.sdk.claims;version=8.4.3
-Import-Package:\
-	!com.google.crypto.tink.*,\
-	\
-	!net.shibboleth.utilities.*,\
-	\
-	!org.bouncycastle.*,\
-	\
-	!org.cryptomator.siv.*,\
-	\
-	!org.joda.time.*,\
-	\
-	!org.opensaml.*,\
-	\
-	*
