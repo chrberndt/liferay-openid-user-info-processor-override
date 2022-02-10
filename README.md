@@ -10,7 +10,7 @@ Explore and demonstrate how to override internal components (which are not meant
 1. Export internal classes from `com.liferay.portal.security.sso.openid.connect.impl` with a fragment bundle
 1. Use the exported classes in separate bundle
 1. Implement a service with a higher `service.ranking` (`com.chberndt.liferay.portal.security.sso.openid.connect.internal.CustomOpenIdConnectUserInfoProcessorImpl`)
-1. Restart your server  
+1. Restart your server (During development you have to `stop` and `start` the host module in order to force a rewiring of the services)
 1. Verify that your custom service is used instead of the default implementation
 
 ```bash
