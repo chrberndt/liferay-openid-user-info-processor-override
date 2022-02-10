@@ -1,0 +1,17 @@
+Bundle-Name: custom-portal-security-sso-opensso-impl
+Bundle-SymbolicName: com.chberndt.liferay.portal.security.sso.openid.connect.internal
+Bundle-Version: 1.0.0
+Import-Package:\
+	!com.google.crypto.tink.*,\
+	\
+	!net.shibboleth.utilities.*,\
+	\
+	!org.bouncycastle.*,\
+	\
+	!org.cryptomator.siv.*,\
+	\
+	!org.joda.time.*,\
+	\
+	!org.opensaml.*,\
+	\
+	*

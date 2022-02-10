@@ -1,0 +1,9 @@
+dependencies {
+	// The following two are exported by means of the fragment bundle
+	// compileInclude group: "com.nimbusds", name: "oauth2-oidc-sdk", version: "6.16.2"
+	// compileOnly group: "com.nimbusds", name: "oauth2-oidc-sdk"
+
+	compileOnly group: "com.liferay", name: "com.liferay.portal.security.sso.openid.connect.impl"
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly group: "com.nimbusds", name: "oauth2-oidc-sdk", version: "8.4.3"
+}
